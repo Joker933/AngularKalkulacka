@@ -1,17 +1,11 @@
 
-.tlacitka {
-    height: calc(100% / 3);
-  }
-  
-  .tlacitko {
-    margin: 0;
-    width: 25%;
-    height: 20%;
-    background: whitesmoke;
-    color: black;
-    padding: 5%;
-    font-size: 2rem;
-    text-align: center;
-    cursor: pointer;
-    display: inline-block;
-  }
+.tlacitko{
+  width: 60px;
+  height: 60px;
+  font-size: 20;
+  margin: 2;
+}
+.textview{
+  width: 250px;
+  height: 30px;
+}
