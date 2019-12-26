@@ -1,16 +1,18 @@
 <!-- <div class="tlacitka"> -->
 <div>
   <div class="hlavni">
-    <form name="formular" class="vysledek">
-      <div name="tabulka" class="vysledek" [innerHTML]="vysledek"></div>
-    </form>
+    <table>
+      <tr>
+        <td name="tabulka" class="vysledek" [innerHTML]="vysledek"></td>
+      </tr>
+    </table>
   </div>
   <table>
     <tr>
       <td><input class="tlacitko" type="button" value="AC"(click)="ac()"></td>
-      <td><input class="tlacitko" type="button" value="DEL"(click)="del()"></td>
       <td><input class="tlacitko" type="button" value="/"(click)="deleno()"></td>
       <td><input class="tlacitko" type="button" value="*"(click)="krat()"></td>
+      <td><input class="tlacitko" type="button" value="="(click)="vypocet()"></td>
     </tr>
     <tr>
       <td><input class="tlacitko" type="button" value="7"(click)="sedm()"></td>
@@ -28,7 +30,7 @@
       <td><input class="tlacitko" type="button" value="1"(click)="jedna()"></td>
       <td><input class="tlacitko" type="button" value="2"(click)="dva()"></td>
       <td><input class="tlacitko" type="button" value="3"(click)="tri()"></td>
-      <td><input class="tlacitko" type="button" value="="></td>
+      <td><input class="tlacitko" type="button" value="0"(click)="nula()"></td>
     </tr>
   </table>
 </div>
