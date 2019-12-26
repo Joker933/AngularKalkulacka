@@ -2,32 +2,32 @@
 <div>
   <div class="hlavni">
     <form name="formular" class="vysledek">
-      <input name="tabulka" class="vysledek">
+      <div name="tabulka" class="vysledek" [innerHTML]="vysledek"></div>
     </form>
   </div>
   <table>
     <tr>
-      <td><input class="tlacitko" type="button" value="AC"></td>
-      <td><input class="tlacitko" type="button" value="DEL"></td>
-      <td><input class="tlacitko" type="button" value="/"onclick="vlozit(/)"></td>
-      <td><input class="tlacitko" type="button" value="*"onclick="vlozit(*)"></td>
+      <td><input class="tlacitko" type="button" value="AC"(click)="ac()"></td>
+      <td><input class="tlacitko" type="button" value="DEL"(click)="del()"></td>
+      <td><input class="tlacitko" type="button" value="/"(click)="deleno()"></td>
+      <td><input class="tlacitko" type="button" value="*"(click)="krat()"></td>
     </tr>
     <tr>
-      <td><input class="tlacitko" type="button" value="7"onclick="vlozit(7)"></td>
-      <td><input class="tlacitko" type="button" value="8"onclick="vlozit(8)"></td>
-      <td><input class="tlacitko" type="button" value="9"onclick="vlozit(9)"></td>
-      <td><input class="tlacitko" type="button" value="-"onclick="vlozit(-)"></td>
+      <td><input class="tlacitko" type="button" value="7"(click)="sedm()"></td>
+      <td><input class="tlacitko" type="button" value="8"(click)="osm()"></td>
+      <td><input class="tlacitko" type="button" value="9"(click)="devet()"></td>
+      <td><input class="tlacitko" type="button" value="-"(click)="minus()"></td>
     </tr>
     <tr>
-      <td><input class="tlacitko" type="button" value="4"onclick="vlozit(4)"></td>
-      <td><input class="tlacitko" type="button" value="5"onclick="vlozit(5)"></td>
-      <td><input class="tlacitko" type="button" value="6"onclick="vlozit(6)"></td>
-      <td><input class="tlacitko" type="button" value="+"onclick="vlozit(+)"></td>
+      <td><input class="tlacitko" type="button" value="4"(click)="ctyri()"></td>
+      <td><input class="tlacitko" type="button" value="5"(click)="pet()"></td>
+      <td><input class="tlacitko" type="button" value="6"(click)="sest()"></td>
+      <td><input class="tlacitko" type="button" value="+"(click)="plus()"></td>
     </tr>
     <tr>
-      <td><input class="tlacitko" type="button" value="1"onclick="vlozit(1)"></td>
-      <td><input class="tlacitko" type="button" value="2"onclick="vlozit(2)"></td>
-      <td><input class="tlacitko" type="button" value="3"onclick="vlozit(3)"></td>
+      <td><input class="tlacitko" type="button" value="1"(click)="jedna()"></td>
+      <td><input class="tlacitko" type="button" value="2"(click)="dva()"></td>
+      <td><input class="tlacitko" type="button" value="3"(click)="tri()"></td>
       <td><input class="tlacitko" type="button" value="="></td>
     </tr>
   </table>
