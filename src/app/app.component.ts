@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Kalkulacka'
   vysledek: any = '';
-  c:number = 0;
   nula() {
     this.vysledek += 0;
   }
@@ -55,11 +54,8 @@ export class AppComponent {
   }
 
   vypocet() {
-    this.c = this.vysledek;
-    console.log(this.c);
-    this.vysledek = '';
+    var expression = this.vysledek;
+    this.vysledek =eval(expression.toString());
   }
-  
-
 }
-//Vubec nevim co zde psat dal :)
+//Jsem GENIUS :)
